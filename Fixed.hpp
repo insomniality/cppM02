@@ -5,10 +5,10 @@ class Fixed
 {
 	private:
 		int					fixed_point;
-		static const int	fractional_bits; // always 8
+		static const int	fractional_bits = 8; // always 8
 	public:
 		Fixed();
-		Fixed(Fixed &other);
+		Fixed(const Fixed &other);
 		
 		~Fixed();
 
